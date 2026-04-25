@@ -1,268 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <title>Binyamin</title>
-  <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="color-scheme" content="light dark">
-
-
-
-
-<meta name="author" content="Christian Tapia">
-<meta name="description" content="Christian Tapia&#39;s personal website">
-<meta name="keywords" content="blog,developer,personal,hacker,redteam,cybersecurity,educator,walkthroughs,ctfs,tryhackme">
-
-
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Binyamin">
-  <meta name="twitter:description" content="Christian Tapia&#39;s personal website">
-
-<meta property="og:url" content="https://binyamint.github.io/">
-  <meta property="og:site_name" content="Binyamin">
-  <meta property="og:title" content="Binyamin">
-  <meta property="og:description" content="Christian Tapia&#39;s personal website">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="website">
-
-
-
-
-<link rel="canonical" href="https://binyamint.github.io/">
-
-
-<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
-
-
-  
-  
-  <link rel="stylesheet" href="/css/coder.min.7763f8bc6341ecf82378e867c285e1549abb063a899be313ccd25dbfcd24fa7d.css" integrity="sha256-d2P4vGNB7PgjeOhnwoXhVJq7BjqJm&#43;MTzNJdv80k&#43;n0=" crossorigin="anonymous" media="screen" />
-
-
-
-
-
-
-  
-    
-    
-    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
-  
-
-
-
- 
-
-
-
-
-<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" sizes="any">
-<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
-
-<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
-
-
-<link rel="alternate" type="application/rss+xml" href="/index.xml" title="Binyamin" />
-
-
-<meta name="generator" content="Hugo 0.145.0">
-
-
-
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Tapia | Cybersecurity Expert</title>
+    <meta name="description" content="Portafolio profesional de Christian Tapia, especialista en ciberseguridad, pentesting y análisis de malware.">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+<body>
 
+    <!-- Navigation -->
+    <nav class="glass">
+        <a href="#home" class="logo" onclick="switchTab('home')">Binyamin<span>.</span></a>
+        <ul class="nav-links">
+            <li><a onclick="switchTab('home')" class="tab-btn active" data-target="home">Inicio</a></li>
+            <li><a onclick="switchTab('proyectos')" class="tab-btn" data-target="proyectos">Proyectos</a></li>
+            <li><a onclick="switchTab('writeups')" class="tab-btn" data-target="writeups">Writeups</a></li>
+        </ul>
+    </nav>
 
+    <!-- HOME TAB -->
+    <section id="home" class="tab-content active">
+        <div class="container hero">
+            <div class="cyber-badge"><i class="fa-solid fa-shield-halved"></i> SECURE / PENTESTER / HACKER</div>
+            <h1>Christian Tapia</h1>
+            <h2>Cybersecurity Expert & Red Teamer</h2>
+            <p>Especializado en hacking ético, análisis de vulnerabilidades, auditorías WiFi y desarrollo de infraestructura segura. Transformando vectores de ataque en arquitecturas impenetrables.</p>
+            
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a onclick="switchTab('proyectos')" class="btn btn-primary">Ver Arsenal <i class="fa-solid fa-arrow-right"></i></a>
+                <a onclick="switchTab('writeups')" class="btn btn-primary" style="background: rgba(255,255,255,0.05); color: #fff; border-color: rgba(255,255,255,0.2); box-shadow: none;">Leer Writeups</a>
+            </div>
 
+            <div class="social-links">
+                <a href="https://github.com/BinyaminT" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/christian-tapia-tapia-257950b8/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.tiktok.com/@bit_a_bit_binyamin?_r=1&_t=ZS-95p2ISE78Lg" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/bitabit.by.binyamin?igsh=MXQybHdrOHBkNDZuMg==" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://youtube.com/@bitabitbybinyamin?si=Z0oVAETAiEfKfwPU" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
 
+    <!-- PROYECTOS TAB -->
+    <section id="proyectos" class="tab-content">
+        <div class="container">
+            <h2>>_ PROYECTOS TÉCNICOS</h2>
+            <p>Desarrollo de herramientas ofensivas y defensivas, integrando hardware y software para auditorías avanzadas.</p>
+            
+            <div class="grid">
+                <!-- Melfi Project -->
+                <div class="card glass">
+                    <img src="images/melfi.png" alt="Melfi Project">
+                    <h3>Melfi</h3>
+                    <p>Proyecto basado en ESP32 con un enfoque avanzado en auditoría WiFi. Diseñado para realizar análisis de espectro, captura de handshakes, y pruebas de penetración en redes inalámbricas utilizando técnicas de hotplugging y automatización de payloads.</p>
+                    <div class="tags">
+                        <span class="tag">ESP32</span>
+                        <span class="tag">WiFi Auditing</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">Hardware Hacking</span>
+                    </div>
+                </div>
 
+                <!-- BenGuard Project -->
+                <div class="card glass">
+                    <img src="images/benguard.png" alt="BenGuard VPN">
+                    <h3>BenGuard VPN</h3>
+                    <p>Plataforma de infraestructura segura y gestión de VPN. Incluye un dashboard profesional con autenticación OAuth2, despliegue de túneles WireGuard, verificación en tiempo real (Spectre-6) e integración mediante API REST segura.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">FastAPI</span>
+                        <span class="tag">WireGuard</span>
+                        <span class="tag">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<body class="preload-transitions colorscheme-auto">
-  
-<div class="float-container">
-    <a id="dark-mode-toggle" class="colorscheme-toggle">
-        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
-    </a>
-</div>
+    <!-- WRITEUPS TAB -->
+    <section id="writeups" class="tab-content">
+        <div class="container">
+            <h2>>_ CTF WRITEUPS</h2>
+            <p>He resuelto múltiples desafíos en TryHackMe y plataformas similares. Aquí detallo el análisis, la explotación de vulnerabilidades (CVEs) y la escalada de privilegios.</p>
+            
+            <div class="grid">
+                <!-- Writeup 1 -->
+                <a href="https://medium.com/@chrstntapia/cat-pictures-tryhackme-en-espa%C3%B1ol-c9f07f2443e1" target="_blank" class="card glass">
+                    <img src="images/cat_pictures_ctf.jpg" alt="Cat Pictures CTF">
+                    <h3>Cat Pictures</h3>
+                    <p>Port knocking, reverse shells y escalada de privilegios en entorno Linux.</p>
+                    <div class="tags"><span class="tag">TryHackMe</span><span class="tag">Linux</span></div>
+                </a>
+                
+                <!-- Writeup 2 -->
+                <a href="https://medium.com/@chrstntapia/silver-platter-tryhackme-en-espa%C3%B1ol-b565eeb3eef4" target="_blank" class="card glass">
+                    <img src="images/silver_plat_ctf.png" alt="Silver Platter CTF">
+                    <h3>Silver Platter</h3>
+                    <p>Análisis y desarrollo completo del reto Silver Platter.</p>
+                    <div class="tags"><span class="tag">TryHackMe</span><span class="tag">CTF</span></div>
+                </a>
 
+                <!-- Writeup 3 -->
+                <a href="https://medium.com/@chrstntapia/ctf-pyrat-tryhackme-en-espa%c3%b1ol-4854ae8514f8" target="_blank" class="card glass">
+                    <img src="images/pyrat_ctf.png" alt="PyRat CTF">
+                    <h3>PyRat</h3>
+                    <p>Análisis forense y explotación en el reto PyRat.</p>
+                    <div class="tags"><span class="tag">Python</span><span class="tag">Forensics</span></div>
+                </a>
 
-  <main class="wrapper">
-    <nav class="navigation">
-  <section class="container">
-    
-    <a class="navigation-title" href="https://binyamint.github.io/">
-      Binyamin
-    </a>
-    
-    
-      <input type="checkbox" id="menu-toggle" />
-      <label class="menu-button float-right" for="menu-toggle">
-        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
-      </label>
-      <ul class="navigation-list">
-        
-          
-            <li class="navigation-item">
-              <a class="navigation-link " href="/writeups/">Writeups</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link " href="/about/">About</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link " href="/proyect/">Proyectos</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link " href="/contact/">Contact</a>
-            </li>
-          
-        
-        
-      </ul>
-    
-  </section>
-</nav>
+                <!-- Writeup 4 -->
+                <a href="https://medium.com/@chrstntapia/ctf-b3dr0ck-tryhackme-en-espa%C3%B1ol-f35018b648b6" target="_blank" class="card glass">
+                    <img src="images/b3dr0ck_ctf.png" alt="B3dr0ck CTF">
+                    <h3>B3dr0ck</h3>
+                    <p>Desarrollo y resolución del reto de B3dr0ck.</p>
+                    <div class="tags"><span class="tag">TryHackMe</span><span class="tag">CTF</span></div>
+                </a>
 
+                <!-- Writeup 5 -->
+                <a href="https://medium.com/@chrstntapia/wordpress-explotando-cve-2021-29447-tryhackme-en-espa%C3%B1ol-54b1dc972c63" target="_blank" class="card glass">
+                    <img src="images/wordpress.png" alt="WordPress CVE">
+                    <h3>WordPress Exploitation</h3>
+                    <p>Explotando la vulnerabilidad crítica CVE-2021-29447 paso a paso.</p>
+                    <div class="tags"><span class="tag">CVE-2021-29447</span><span class="tag">Web</span></div>
+                </a>
 
-    <div class="content">
-      
-  <section class="container centered">
-  <div class="about">
-    
-  
-    <div class="avatar"><img src="/images/avatar.jpg" alt="avatar"></div>
-  
+                <!-- Writeup 6 -->
+                <a href="https://medium.com/@chrstntapia/simplehelp-cve-2024-57727-tryhackme-en-espa%C3%B1ol-df18e2b7d9d3" target="_blank" class="card glass">
+                    <img src="images/SimpleHelp.png" alt="SimpleHelp CVE">
+                    <h3>SimpleHelp Exploit</h3>
+                    <p>Explotando CVE-2024-57727 en infraestructura SimpleHelp.</p>
+                    <div class="tags"><span class="tag">CVE-2024-57727</span><span class="tag">Pentesting</span></div>
+                </a>
+            </div>
+        </div>
+    </section>
 
-
-
-
-    <h1>Christian Tapia</h1>
-
-<h2>Passionate Hacker, Red Team Enthusiast, and Cybersecurity Educator </h2>
-
-
-
-    
-<ul>
-  
-    
-      <li>
-        <a href="https://github.com/BinyaminT" aria-label="Github"   >
-          <i class="fa-brands fa-github fa-2x" aria-hidden="true"></i>
-        </a>
-      </li>
-    
-  
-    
-      <li>
-        <a href="https://www.linkedin.com/in/christian-tapia-tapia-257950b8/" aria-label="LinkedIn"   >
-          <i class="fa-brands fa-linkedin fa-2x" aria-hidden="true"></i>
-        </a>
-      </li>
-
-      <li>
-        <a href="https://www.tiktok.com/@bit_a_bit_binyamin?_r=1&amp;_t=ZS-95p2ISE78Lg" aria-label="TikTok"   >
-          <i class="fa-brands fa-tiktok fa-2x" aria-hidden="true"></i>
-        </a>
-      </li>
-
-      <li>
-        <a href="https://www.instagram.com/bitabit.by.binyamin?igsh=MXQybHdrOHBkNDZuMg==" aria-label="Instagram"   >
-          <i class="fa-brands fa-instagram fa-2x" aria-hidden="true"></i>
-        </a>
-      </li>
-
-      <li>
-        <a href="https://youtube.com/@bitabitbybinyamin?si=Z0oVAETAiEfKfwPU" aria-label="YouTube"   >
-          <i class="fa-brands fa-youtube fa-2x" aria-hidden="true"></i>
-        </a>
-      </li>
-    
-  
-</ul>
-
-  </div>
-
-  
-
-</section>
-
-
-    </div>
-
-    <footer class="footer">
-  <section class="container">
-    ©
-    
-      2019 -
-    
-    2025
-     Christian Tapia 
-    ·
-    
-    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
-    
-  </section>
-</footer>
-
-  </main>
-
-  
-
-  
-  
-  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
+    <!-- JS for tabs -->
+    <script>
+        function switchTab(tabId) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            // Remove active from all nav buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected tab
+            document.getElementById(tabId).classList.add('active');
+            // Highlight selected nav button
+            document.querySelector(`.tab-btn[data-target="${tabId}"]`).classList.add('active');
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+    </script>
 </body>
 </html>
